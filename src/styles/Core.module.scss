@@ -1,0 +1,25 @@
+.container {
+	@apply m-auto px-3 max-w-7xl;
+}
+.containerNav {
+	@apply m-auto px-3 w-full max-w-[100vw] overflow-x-hidden;
+}
+.navListItem {
+	@apply flex text-xs text-green pr-9 cursor-pointer text-nowrap font-medium transition-all duration-200 ease-in-out max-xl:pr-1 max-lg:text-xss  max-md:text-xss max-[1770px]:pr-1;
+
+	&:hover {
+		@apply text-greenligth underline underline-offset-4 scale-[1.02];
+		@apply transition-colors duration-200 ease-in-out;
+	}
+}
+
+.btn {
+	@apply py-4 px-7 bg-green rounded-full  text-white text-nowrap text-xs max-xl:max-w-56 max-xl:flex max-xl:justify-center;
+}
+.btnGray {
+	@apply py-5 px-7 bg-gray rounded-full  text-white text-nowrap text-xs;
+}
+
+.tariffLi {
+	@apply text-xs font-normal leading-normal mb-2 max-md:text-xss;
+}

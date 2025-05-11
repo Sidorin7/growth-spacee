@@ -1,0 +1,25 @@
+{/* Прогресс бар */}
+			<div className='w-full max-w-xl mx-auto mb-6'>
+				<div
+					style={{
+						background: '#ddd',
+						borderRadius: '9999px',
+						height: '24px',
+						width: '100%',
+						overflow: 'hidden',
+						boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.2)',
+					}}
+				>
+					<div
+						style={{
+							background: '#22c55e',
+							height: '100%',
+							width: `${progress}%`,
+							transition: 'width 0.5s ease-in-out',
+						}}
+					></div>
+				</div>
+				<p className='mt-2 text-gray-600 text-sm font-medium'>
+					Прогресс: {Math.round(progress)}%
+				</p>
+			</div>
