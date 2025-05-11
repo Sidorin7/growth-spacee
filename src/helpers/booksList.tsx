@@ -23,7 +23,13 @@ import yes from './../img/yes.webp'
 import zero from './../img/zero.webp'
 import zov from './../img/zov.webp'
 
-const booksData = {
+export type Book = {
+	img: string
+	title: string
+	description: string
+	pdf: string
+}
+const booksData: { [category: string]: Book[] } = {
 	Психология: [
 		{
 			img: slow,
@@ -119,6 +125,7 @@ const booksData = {
 			pdf: '/books/getting_things_done.pdf',
 		},
 		{
+			img: '',
 			title: 'Правило 5 секунд',
 			description: 'Как мгновенно принимать решения и действовать.',
 			pdf: '/books/the_5_second_rule.pdf',
@@ -195,26 +202,31 @@ const booksData = {
 	],
 	Здоровье: [
 		{
+			img: '',
 			title: 'Китайское исследование',
 			description: 'О влиянии питания на здоровье.',
 			pdf: '/books/china_study.pdf',
 		},
 		{
+			img: '',
 			title: 'Ген долголетия',
 			description: 'Как замедлить старение и продлить жизнь.',
 			pdf: '/books/longevity_gene.pdf',
 		},
 		{
+			img: '',
 			title: 'Сила сна',
 			description: 'Почему сон важен и как его улучшить.',
 			pdf: '/books/why_we_sleep.pdf',
 		},
 		{
+			img: '',
 			title: 'Ешь, двигайся, спи',
 			description: 'Как маленькие изменения приводят к здоровью.',
 			pdf: '/books/eat_move_sleep.pdf',
 		},
 		{
+			img: '',
 			title: 'Интуитивное питание',
 			description: 'Как перестать зависеть от диет и слушать своё тело.',
 			pdf: '/books/intuitive_eating.pdf',

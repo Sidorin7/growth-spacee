@@ -1,10 +1,16 @@
-import math from '../pages/ogeEge/img/math.jpg'
 import allfr from './../pages/prog/img/allfr.jpg'
 import js from './../pages/prog/img/maxresdefault (1).jpg'
 import fr from './../pages/prog/img/maxresdefault (2).jpg'
 import bk from './../pages/prog/img/maxresdefault (3).jpg'
 import vesrt from './../pages/prog/img/maxresdefault.jpg'
-const booksData = {
+
+export type Book = {
+	img: string
+	title: string
+
+	youtubeUrl: string
+}
+const booksData: { [category: string]: Book[] } = {
 	Frontend: [
 		{
 			img: allfr,
@@ -37,18 +43,6 @@ const booksData = {
 			youtubeUrl:
 				'https://www.youtube.com/watch?v=z43scvZkJl0&ab_channel=%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%91%D1%83%D1%80%D1%82%D0%BE%D0%B2%D0%BE%D0%B9',
 			title: 'Что такое бэкенд и как он устроен?',
-		},
-		{
-			img: math,
-			youtubeUrl: 'https://math100.ru/ege-profil2024/',
-
-			title: 'Math100',
-		},
-		{
-			img: {},
-			youtubeUrl: 'https://math-ege.sdamgia.ru/',
-
-			title: 'Решу ЕГЭ',
 		},
 	],
 }

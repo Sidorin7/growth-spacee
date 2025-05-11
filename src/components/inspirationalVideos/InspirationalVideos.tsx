@@ -1,7 +1,13 @@
 import LazyRuTubeEmbed from '../lazyYouTubeEmbed/LazyYouTubeEmbed'
 import styles from './../../styles/Core.module.scss'
 
-const InspirationalVideos = ({ titlePage, id, previe }) => {
+interface InspirationalProps {
+	titlePage: string
+	id: string
+	previe: string
+}
+
+const InspirationalVideos = ({ titlePage, id, previe }: InspirationalProps) => {
 	return (
 		<section className='bg-greenligth'>
 			<div className={styles.container}>

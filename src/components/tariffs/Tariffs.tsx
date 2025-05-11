@@ -10,7 +10,13 @@ const Tariffs = () => {
 							title='Базовый'
 							price='0'
 							text='Доступ ко всем основным
+							
 материалам.'
+							eng=''
+							prog=''
+							chatE=''
+							crypto=''
+							PersTutor=''
 						/>
 						<Tariff
 							title='Премиум'
@@ -19,6 +25,9 @@ const Tariffs = () => {
 							контент.'
 							prog='Прогроммирование'
 							chatE='Чат с экспертами'
+							eng=''
+							crypto=''
+							PersTutor=''
 						/>
 						<Tariff
 							title='VIP'
@@ -29,6 +38,7 @@ const Tariffs = () => {
 							chatE='Чат с экспертами'
 							crypto='Крипта'
 							PersTutor='Личный куратор'
+							eng=''
 						/>
 					</div>
 				</div>

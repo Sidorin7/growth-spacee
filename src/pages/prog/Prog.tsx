@@ -7,11 +7,9 @@ import fb from './img/max.jpg'
 
 const Prog = () => {
 	const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
-	const [selectedBook, setSelectedBook] = useState<{
+	const [, setSelectedBook] = useState<{
 		img: string
 		title: string
-		description: string
-		pdf: string
 	} | null>(null)
 
 	const [loadedImages, setLoadedImages] = useState<number[]>([])
@@ -21,12 +19,7 @@ const Prog = () => {
 		setSelectedBook(null)
 	}
 
-	const handleBookClick = (book: {
-		img: string
-		title: string
-		description: string
-		pdf: string
-	}) => {
+	const handleBookClick = (book: { img: string; title: string }) => {
 		setSelectedBook(book)
 	}
 
@@ -121,9 +114,6 @@ const Prog = () => {
 									<h3 className='text-lg sm:text-xl font-semibold text-[#333] mt-2'>
 										{book.title}
 									</h3>
-									<p className='text-[#333] mt-2 text-sm sm:text-base opacity-90'>
-										{book.description}
-									</p>
 								</div>
 							</a>
 						))}

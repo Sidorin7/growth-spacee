@@ -5,7 +5,15 @@ import pol from '../pages/ogeEge/img/pol.jpg'
 import rege from '../pages/ogeEge/img/rege.png'
 import sh from '../pages/ogeEge/img/shool.jpg'
 
-const booksData = {
+type Book = {
+	img: string
+	title: string
+	description: string
+	pdf?: string
+	youtubeUrl: string
+}
+
+const booksData: { [category: string]: Book[] } = {
 	Русский: [
 		{
 			img: rege,

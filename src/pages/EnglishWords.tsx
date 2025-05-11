@@ -4,11 +4,17 @@ import Spinner from '../components/ui/Spinner.tsx'
 import { db } from '../helpers/firebase.tsx'
 import './../styles/_flip.scss'
 
+interface Word {
+	ids: string
+	en: string
+	ru: string
+	category: string
+}
 const CATEGORIES = ['Путешествия', 'Дом', 'Работа', 'Ресторан', 'Общение']
 
 const EnglishWords = () => {
-	const [words, setWords] = useState([])
-	const [repeatWords, setRepeatWords] = useState([])
+	const [words, setWords] = useState<Word[]>([])
+	const [repeatWords, setRepeatWords] = useState<Word[]>([])
 	const [category, setCategory] = useState('Путешествия')
 	const [loading, setLoading] = useState(true)
 	const [flipped, setFlipped] = useState(false)
@@ -23,10 +29,13 @@ const EnglishWords = () => {
 				where('category', '==', category)
 			)
 			const querySnapshot = await getDocs(q)
-			const wordsList = querySnapshot.docs.map(doc => ({
-				id: doc.id,
-				...doc.data(),
-			}))
+			const wordsList = querySnapshot.docs.map(doc => {
+				const data = doc.data() as Word // Явно типизируем данные
+				return {
+					id: doc.id,
+					...data,
+				}
+			})
 			setWords(wordsList)
 			setRepeatWords([])
 			setLoading(false)
@@ -74,14 +83,14 @@ const EnglishWords = () => {
 		setFlipped(false)
 	}
 
-	const handleCategoryChange = newCategory => {
+	const handleCategoryChange = (newCategory: string) => {
 		setCategory(newCategory)
 		setCurrentIndex(0)
 		setProgress(0)
 		setFlipped(false)
 	}
 
-	const getFontSize = text => {
+	const getFontSize = (text: string) => {
 		if (!text) return 'text-3xl'
 		const length = text.length
 		if (length > 20) return 'text-xl'

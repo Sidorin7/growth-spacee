@@ -1,5 +1,16 @@
 import BtnGreen from '../btnGreen/BtnGreen'
 import styles from './../../styles/Core.module.scss'
+interface TariffProps {
+	title: string
+	text: string
+	price: string
+	eng: string
+	prog: string
+	chatE: string
+	crypto: string
+	PersTutor: string
+}
+
 const Tariff = ({
 	title,
 	price,
@@ -9,7 +20,7 @@ const Tariff = ({
 	chatE,
 	crypto,
 	PersTutor,
-}) => {
+}: TariffProps) => {
 	return (
 		<div className='w-1/3 max-md:w-full '>
 			<div>

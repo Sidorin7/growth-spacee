@@ -1,6 +1,12 @@
 import BtnGray from '../btnGray/BtnGray'
 
-const Offer = ({ title, text, tbtn }) => {
+interface OfferProps {
+	title: string
+	text: string
+	tbtn: string
+}
+
+const Offer = ({ title, text, tbtn }: OfferProps) => {
 	return (
 		<div className=' border-3 border-solid border-green rounded-3xl mb-8'>
 			<div className='py-12 pl-12 max-xm:pl-2 max-md:py-2'>

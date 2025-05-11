@@ -6,10 +6,16 @@ import Spinner from './components/ui/Spinner'
 import { router } from './router'
 import './styles/_main.scss'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-	<React.StrictMode>
-		<Suspense fallback={<Spinner />}>
-			<RouterProvider router={router} />
-		</Suspense>
-	</React.StrictMode>
-)
+const rootElement = document.getElementById('root')
+
+if (rootElement) {
+	ReactDOM.createRoot(rootElement).render(
+		<React.StrictMode>
+			<Suspense fallback={<Spinner />}>
+				<RouterProvider router={router} />
+			</Suspense>
+		</React.StrictMode>
+	)
+} else {
+	console.error('Root element not found')
+}

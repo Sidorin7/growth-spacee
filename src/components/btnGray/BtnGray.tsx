@@ -1,6 +1,9 @@
 import styles from './../../styles/Core.module.scss'
 
-const BtnGray = ({ text }) => {
+interface BtnGrayProps {
+	text: string
+}
+const BtnGray = ({ text }: BtnGrayProps) => {
 	return <button className={styles.btnGray}>{text}</button>
 }
 
