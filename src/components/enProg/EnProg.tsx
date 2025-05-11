@@ -9,10 +9,10 @@ const EnProg = () => {
 						<div className='w-1/2 max-md1:w-full'>
 							<div className='bg-white  rounded-3xl '>
 								<div className='px-10 py-16 '>
-									<div className='mb-4 text-xlm leading-normal font-bold text-black-1000 max-xm:text-xl max-sm:text-base'>
+									<div className='mb-4 text-xlm leading-normal font-bold text-black-1000 max-xm:text-xl max-sm:text-sm'>
 										<h4>Английский язык</h4>
 									</div>
-									<p className='font-normal text-xl text-black-1000 leading-normal max-xm:text-sm'>
+									<p className='font-normal text-xl text-black-1000 leading-normal max-xm:text-xs'>
 										Учите английский с помощью карточек! Темы: еда, путешествия,
 										о себе и многое другое. Легко и весело!
 									</p>
@@ -22,10 +22,10 @@ const EnProg = () => {
 						<div className=' w-1/2 max-md1:w-full'>
 							<div className='bg-white  rounded-3xl '>
 								<div className='px-10 py-16 '>
-									<div className='mb-4 text-xlm leading-normal font-bold text-black-1000 max-xm:text-xl max-sm:text-base'>
+									<div className='mb-4 text-xlm leading-normal font-bold text-black-1000 max-xm:text-xl max-sm:text-sm'>
 										<h4>Программирование</h4>
 									</div>
-									<p className='font-normal text-xl text-black-1000 leading-normal max-xm:text-sm'>
+									<p className='font-normal text-xl text-black-1000 leading-normal max-xm:text-xs'>
 										Погрузитесь в мир кода! Узнайте, как создавать свои
 										приложения и сайты. Программирование — это круто!
 									</p>

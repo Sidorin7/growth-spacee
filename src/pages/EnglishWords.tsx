@@ -100,7 +100,7 @@ const EnglishWords = () => {
 
 	return (
 		<div className='p-8 text-center'>
-			<h2 className='text-3xl font-bold mb-6 max-md:text-2xl max-sm:text-xlm'>
+			<h2 className='text-3xl font-bold mb-6 max-md:text-2xl max-sm:text-xl'>
 				Категория: {category}
 			</h2>
 

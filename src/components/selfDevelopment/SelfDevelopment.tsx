@@ -9,12 +9,12 @@ const SelfDevelopment = () => {
 					<div className='flex justify-between gap-10 max-md:flex-col justify-center'>
 						<div className='w-1/2 max-md:w-full text-center'>
 							<div className='mb-8 '>
-								<h2 className='text-3xl font-bold  max-xm:text-2xl'>
+								<h2 className='text-3xl font-bold  max-xm:text-2xl max-sm:text-xl'>
 									Саморазвитие
 								</h2>
 							</div>
 							<div className='mb-6 max-md:mb-1'>
-								<p className='text-base'>
+								<p className='text-base max-sm:text-xs'>
 									Добро пожаловать на наш сайт, где саморазвитие становится
 									увлекательным приключением! Здесь ты найдешь все, что нужно
 									для роста и развития.

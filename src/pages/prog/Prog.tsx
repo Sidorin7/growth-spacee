@@ -29,7 +29,7 @@ const Prog = () => {
 
 	return (
 		<div className='max-w-full px-4 sm:px-6 lg:px-12 py-10'>
-			<h1 className='text-3xl font-bold mb-6 text-center max-md:text-2xl max-[600px]:text-xl '>
+			<h1 className='text-3xl font-bold mb-6 text-center max-md:text-2xl max-[600px]:text-xl max-sm:text-base '>
 				Программирование
 			</h1>
 
@@ -78,7 +78,7 @@ const Prog = () => {
 
 					<div className='flex justify-center mb-6'>
 						<button
-							className=' text-lg block ml-10 mb-6 p-5 bg-black-800 text-white rounded-2xl  text-center'
+							className=' text-lg block ml-10 mb-6 p-5 bg-black-800 text-white rounded-2xl  text-center max-sm:ml-0'
 							onClick={() => setSelectedCategory(null)}
 						>
 							Назад к категориям

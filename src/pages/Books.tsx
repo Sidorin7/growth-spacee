@@ -26,7 +26,9 @@ const Books = () => {
 
 	return (
 		<div className=' mx-auto px-4 py-10'>
-			<h1 className='text-3xl font-bold mb-8 text-center'>Категории книг</h1>
+			<h1 className='text-3xl font-bold mb-8 text-center max-sm:text-2xl'>
+				Категории книг
+			</h1>
 
 			{/* Категории */}
 			{!selectedCategory ? (
@@ -37,7 +39,7 @@ const Books = () => {
 							className='bg-[#e4e6c3] rounded-2xl shadow-md p-16 hover:scale-[1.03] transition-transform cursor-pointer'
 							onClick={() => handleCategoryClick(category)}
 						>
-							<h2 className='text-sm font-semibold text-[#333] text-center'>
+							<h2 className='text-sm font-semibold text-[#333] text-center max-sm:text-xs'>
 								{category}
 							</h2>
 						</div>

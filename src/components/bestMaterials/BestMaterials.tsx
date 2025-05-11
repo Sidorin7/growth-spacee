@@ -31,7 +31,7 @@ const BestMaterials = () => {
 							</div>
 
 							<div className='mb-8 mt-3'>
-								<h2 className='text-5xl font-bold  max-[580px]:text-3xl max-sm:text-2xl'>
+								<h2 className='text-5xl font-bold  max-[580px]:text-3xl max-sm:text-xl'>
 									Лучшие материалы
 								</h2>
 							</div>

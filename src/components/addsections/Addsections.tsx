@@ -12,11 +12,7 @@ const Addsections = () => {
 						<div className='w-1/4 max-[850px]:w-full'>
 							<div className=' border-3 border-solid border-green rounded-3xl mb-8'>
 								<div className='py-12 px-5 flex items-center flex-col'>
-									<img
-										className='max-w-full h-full rounded-3xl'
-										src={book}
-										alt=''
-									/>
+									<img className=' rounded-3xl' src={book} alt='' />
 
 									<div className='mb-4 '>
 										<h4 className='text-xlm leading-normal font-bold text-black-1000 max-xm:text-xl'>
@@ -35,11 +31,7 @@ const Addsections = () => {
 						<div className='w-1/3 max-[850px]:w-full'>
 							<div className=' border-3 border-solid border-green rounded-3xl mb-8 '>
 								<div className='py-12 px-5 flex items-center flex-col max-[850px]:py-0'>
-									<img
-										className='max-w-full h-full rounded-3xl'
-										src={podcast}
-										alt=''
-									/>
+									<img className=' rounded-3xl ' src={podcast} alt='' />
 
 									<div className='mb-4 '>
 										<h4 className='text-xlm leading-normal font-bold text-black-1000 max-xm:text-xl'>
@@ -58,11 +50,7 @@ const Addsections = () => {
 						<div className='w-2/5 max-[850px]:w-full'>
 							<div className=' border-3 border-solid border-green rounded-3xl mb-8'>
 								<div className='py-12 px-5 flex items-center flex-col'>
-									<img
-										className='max-w-full h-full rounded-3xl'
-										src={prog}
-										alt=''
-									/>
+									<img className='rounded-3xl' src={prog} alt='' />
 
 									<div className='mb-4 '>
 										<h4 className='text-xlm leading-normal font-bold text-black-1000 max-xm:text-xl'>

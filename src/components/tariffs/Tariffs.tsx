@@ -2,7 +2,7 @@ import styles from './../../styles/Core.module.scss'
 import Tariff from './Tariff'
 const Tariffs = () => {
 	return (
-		<section className=' hdr pt-20 pb-20 bg-lwhite'>
+		<section className=' hdr pt-20 pb-20 bg-lwhite max-sm:pt-0'>
 			<div className={styles.container}>
 				<div className='tariffs__wrapper '>
 					<div className='flex justify-between gap-5 max-[650px]:flex-col justify-center text-center'>

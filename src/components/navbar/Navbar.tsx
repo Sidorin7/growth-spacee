@@ -14,7 +14,7 @@ const Navbar = () => {
 					{/* Логотип */}
 					<Link
 						to='/'
-						className='text-xlm text-green font-semibold whitespace-nowrap text-2xl'
+						className='text-xlm text-green font-semibold whitespace-nowrap text-2xl max-sm:text-xl'
 					>
 						Growth Space
 					</Link>
