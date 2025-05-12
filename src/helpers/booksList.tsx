@@ -7,7 +7,7 @@ import es from './../img/es.webp'
 import father from './../img/father.webp'
 import fun from './../img/fun.webp'
 import good from './../img/good.webp'
-import hear from './../img/hear.webp'
+// import hear from './../img/hear.webp'
 import magicMorning from './../img/magicMorning.webp'
 import nas from './../img/nas.webp'
 import pod from './../img/pod.webp'
@@ -36,32 +36,32 @@ const booksData: { [category: string]: Book[] } = {
 			title: 'Думай медленно, решай быстро',
 			description:
 				'Книга о том, как работает наше мышление: быстрое интуитивное и медленное логическое.',
-			pdf: '/books/thinking_fast_and_slow.pdf',
+			pdf: 'https://www.r-5.org/files/books/ethology/human-mind/thinking/Daniel_Kahneman-Thinking_Fast_and_Slow-RU.pdf',
 		},
 		{
 			img: pod,
 			title: 'Сила подсознания',
 			description: 'Как наше подсознание влияет на решения и поведение.',
-			pdf: '/books/the_power_of_subconscious.pdf',
+			pdf: 'https://www.troykaonline.com/files/pdf/9785041121822.pdf',
 		},
 		{
 			img: ya,
 			title: 'Эмоциональный интеллект',
 			description: 'Как управлять эмоциями и строить успешные отношения.',
-			pdf: '/books/emotional_intelligence.pdf',
+			pdf: 'https://lib.tau-edu.kz/wp-content/uploads/2023/11/%D0%93%D0%BE%D1%83%D0%BB%D0%BC%D0%B0%D0%BD-%D0%94.-%D0%AD%D0%BC%D0%BE%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA%D1%82.-%D0%9F%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%BE%D0%BD-%D0%BC%D0%BE%D0%B6%D0%B5%D1%82-%D0%B7%D0%BD%D0%B0%D1%87%D0%B8%D1%82%D1%8C-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5-IQ.pdf',
 		},
 		{
 			img: vl,
 			title: 'Психология влияния',
 			description: 'Методы и принципы влияния на людей.',
-			pdf: '/books/influence_psychology.pdf',
+			pdf: 'https://trinity-mission.ortox.ru/files/2016/03/Chaldini-Psihologiya-vliyaniya.pdf',
 		},
 		{
 			img: yes,
 			title: 'Сказать жизни "ДА!"',
 			description:
 				'Жизнь состоит из сложностей и проблем. Порой у каждого из нас возникает ощущение, что утрачен смысл, опускаются руки и не знаешь, что делать. Знаменитому австрийскому психиатру, психологу и философу Виктору Франклу пришлось пройти сквозь нацистские концлагеря.',
-			pdf: '/books/hypnotic_words.pdf',
+			pdf: 'https://nitsolim.org/R/OrgR/Library/Frankl/FranklDA.pdf',
 		},
 	],
 	Бизнес: [
@@ -69,32 +69,32 @@ const booksData: { [category: string]: Book[] } = {
 			img: father,
 			title: 'Богатый папа, бедный папа',
 			description: 'Основы финансовой грамотности и мышления богатых людей.',
-			pdf: '/books/rich_dad_poor_dad.pdf',
+			pdf: 'https://assets.nicepagecdn.com/d6ccfd04/5718591/files/bogatyy-papa-bednyy-papa.pdf',
 		},
 		{
 			img: good,
 			title: 'От хорошего к великому',
 			description: 'Как компании становятся лидерами в своей отрасли.',
-			pdf: '/books/good_to_great.pdf',
+			pdf: 'https://assets.nicepagecdn.com/d6ccfd04/5718591/files/Ot-horoshego-k-velikomu-pdf.pdf',
 		},
 		{
 			img: fun,
 			title: 'Доставляя счастье',
 			description: 'Философия бизнеса Zappos.',
-			pdf: '/books/delivering_happiness.pdf',
+			pdf: 'https://files.1-mok.ru/vdv/mskobr/cstv/1/Toni_Shei_Dostavlaya_schastie.pdf',
 		},
 		{
 			img: catchs,
 			title: 'К черту все, берись и делай!',
 			description: 'Как не бояться перемен и добиваться успеха.',
-			pdf: '/books/screw_it_lets_do_it.pdf',
+			pdf: 'https://books-online.in/upload/pdf/k-chertu-vsyo-beris-i-delay-pdf.pdf',
 		},
 		{
 			img: zero,
 			title: 'От нуля к единице',
 			description:
 				'Как создать компанию с нуля, привести ее к успеху, сделав лидером рынка?',
-			pdf: '/books/millionaire_mindset.pdf',
+			pdf: 'https://makhzan.space/wp-content/uploads/2024/07/%D0%9E%D1%82-%D0%BD%D1%83%D0%BB%D1%8F-%D0%BA-%D0%B5%D0%B4%D0%B8%D0%BD%D0%B8%D1%86%D0%B5.pdf',
 		},
 	],
 	Продуктивность: [
@@ -103,32 +103,32 @@ const booksData: { [category: string]: Book[] } = {
 			title: 'Атомные привычки',
 			description:
 				'Как маленькие привычки могут привести к большим изменениям в жизни.',
-			pdf: '/books/atomic_habits.pdf',
+			pdf: 'https://book2you.net/wp-content/uploads/2023/09/80340315.pdf',
 		},
 		{
 			img: magicMorning,
 			title: 'Магия утра',
 			description: 'Как утренние привычки могут изменить вашу жизнь.',
-			pdf: '/books/miracle_morning.pdf',
+			pdf: 'https://msrabota.ru/content/book_docs/osborn_magiya-utra-dlya-finansovoy-svobody_40p3gq_556348_.pdf',
 		},
 		{
 			img: es,
 			title: 'Эссенциализм',
 			description: 'Как сосредоточиться только на главном.',
-			pdf: '/books/essentialism.pdf',
+			pdf: 'https://www.mann-ivanov-ferber.ru/assets/files/bookparts/hozyain_svoej_zhizni/Essentialism_read_new_stamped.pdf',
 		},
 		{
 			img: snav,
 			title: 'Семь навыков высокоэффективных людей',
 			description:
 				'Во-первых, эта книга излагает системный подход к определению жизненных целей, приоритетов человека. Эти цели у всех разные, но книга помогает понять себя и четко сформулировать жизненные цели.',
-			pdf: '/books/getting_things_done.pdf',
+			pdf: 'https://gorodnaneve.com/ru/uploads/lib/6626-gorodnaneve-com.pdf',
 		},
 		{
 			img: '',
 			title: 'Правило 5 секунд',
 			description: 'Как мгновенно принимать решения и действовать.',
-			pdf: '/books/the_5_second_rule.pdf',
+			pdf: 'https://kutubxona.samduuf.uz/download/3588',
 		},
 	],
 	Лидерство: [
@@ -170,68 +170,67 @@ const booksData: { [category: string]: Book[] } = {
 			img: zov,
 			title: 'Как завоевывать друзей и оказывать влияние на людей',
 			description: 'Лучшее руководство по общению и влиянию.',
-			pdf: '/books/how_to_win_friends.pdf',
+			pdf: 'https://library1.info/wp-content/uploads/2024/02/karnegi.-kak-zavoevyvat-druzej.pdf',
 		},
 		{
 			img: nas,
 			title: 'Я слышу вас насквозь',
 			description: 'Как понимать людей и строить доверие.',
-			pdf: '/books/i_hear_you.pdf',
+			pdf: 'https://www.mann-ivanov-ferber.ru/assets/files/bookparts/justlisten/listen_read.pdf',
 		},
 		{
 			img: who,
 			title: 'Как разговаривать с кем угодно, когда угодно и где угодно',
 			description:
 				'Ларри Кинг — один из известнейших в США людей — много лет вел популярное ток-шоу телекомпании CNN, быть его гостем считали за честь виднейшие деятели политики, бизнеса, спорта и искусства.',
-			pdf: '/books/words_that_change_minds.pdf',
+			pdf: 'https://acterschool.ru/files/kak_razgovarivat_s_kem_ugodno_i_kogda_ugodno.pdf',
 		},
-		{
-			img: hear,
-			title: 'Услышать и понять. Основа доверительных отношений',
-			description:
-				'Как научиться слушать людей и улучшить благодаря этому все сферы своей жизни.',
-			pdf: '/books/science_of_communication.pdf',
-		},
+		// {
+		// 	img: hear,
+		// 	title: 'Услышать и понять. Основа доверительных отношений',
+		// 	description:
+		// 		'Как научиться слушать людей и улучшить благодаря этому все сферы своей жизни.',
+		// 	pdf: '/books/science_of_communication.pdf',
+		// },
 		{
 			img: sec,
 			title: 'Секреты общения. Магия слов.',
 			description:
 				'Слова, которыми мы пользуемся, определяют наш успех в жизни – в отношениях, на работе и в бизнесе. Те, кто понимает силу устного слова и как оно влияет на чувства и разум людей, несомненно, примут осознанное решение развивать навыки устной речи.',
-			pdf: '/books/subtle_art_of_not_giving_a_f.pdf',
+			pdf: 'https://book-hive.org/26045-sekrety-obschenija-magija-slov.html',
 		},
 	],
-	Здоровье: [
-		{
-			img: '',
-			title: 'Китайское исследование',
-			description: 'О влиянии питания на здоровье.',
-			pdf: '/books/china_study.pdf',
-		},
-		{
-			img: '',
-			title: 'Ген долголетия',
-			description: 'Как замедлить старение и продлить жизнь.',
-			pdf: '/books/longevity_gene.pdf',
-		},
-		{
-			img: '',
-			title: 'Сила сна',
-			description: 'Почему сон важен и как его улучшить.',
-			pdf: '/books/why_we_sleep.pdf',
-		},
-		{
-			img: '',
-			title: 'Ешь, двигайся, спи',
-			description: 'Как маленькие изменения приводят к здоровью.',
-			pdf: '/books/eat_move_sleep.pdf',
-		},
-		{
-			img: '',
-			title: 'Интуитивное питание',
-			description: 'Как перестать зависеть от диет и слушать своё тело.',
-			pdf: '/books/intuitive_eating.pdf',
-		},
-	],
+	// Здоровье: [
+	// 	{
+	// 		img: '',
+	// 		title: 'Китайское исследование',
+	// 		description: 'О влиянии питания на здоровье.',
+	// 		pdf: 'https://www.r-5.org/files/books/ethology/inequality/v-style/the-china-study/Colin_Campbell-The_China_Study-RU.pdf',
+	// 	},
+	// 	{
+	// 		img: '',
+	// 		title: 'Ген долголетия',
+	// 		description: 'Как замедлить старение и продлить жизнь.',
+	// 		pdf: 'https://sites.icgbio.ru/vogis/download/gen-razvitiya/06-Moskalev-Rus.pdf',
+	// 	},
+	// 	{
+	// 		img: '',
+	// 		title: 'Сила сна',
+	// 		description: 'Почему сон важен и как его улучшить.',
+	// 		pdf: '/books/why_we_sleep.pdf',
+	// 	},
+	// 	{
+	// 		img: '',
+	// 		title: 'Ешь, двигайся, спи',
+	// 		description: 'Как маленькие изменения приводят к здоровью.',
+	// 		pdf: 'https://urss.ru/images/add_ru/187930-1.pdf',
+	// 	},
+	// 	{
+	// 		img: '',
+	// 		title: 'Интуитивное питание',
+	// 		description: 'Как перестать зависеть от диет и слушать своё тело.',
+	// 		pdf: 'https://cdn.img-gorod.ru/nomenclature/24/652/2465291.pdf',
+	// 	},
 }
 
 export { booksData }

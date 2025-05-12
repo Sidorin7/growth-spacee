@@ -47,8 +47,8 @@ const Books = () => {
 				</div>
 			) : selectedBook ? (
 				// Окно с информацией о книге
-				<div className='max-w-5xl mx-auto bg-[#e4e6c3] p-6 rounded-2xl shadow-md text-center'>
-					<h2 className='text-2xl font-bold text-[#333]'>
+				<div className='max-w-5xl mx-auto bg-[#e4e6c3] p-6 rounded-2xl shadow-md text-center '>
+					<h2 className='text-2xl font-bold text-[#333] max-sm:text-xl'>
 						{selectedBook.title}
 					</h2>
 					<p className='mt-4 text-lg text-gray-700'>
@@ -57,9 +57,9 @@ const Books = () => {
 					<a
 						href={selectedBook.pdf}
 						download
-						className='block mt-6 px-6 py-3 bg-green-600 text-black-1000 text-bold text-base rounded-lg hover:bg-green-700 transition'
+						className='inline-flex mt-6 px-6 py-3 bg-black-800 text-white text-bold text-base rounded-2xl hover:bg-green transition max-sm:mb-4'
 					>
-						📥 Скачать PDF
+						📥 Открыть PDF
 					</a>
 					<button
 						className=' text-lg block ml-10 mb-6 p-5 bg-black-800 text-white rounded-2xl  text-center'

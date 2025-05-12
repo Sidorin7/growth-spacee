@@ -2,7 +2,7 @@ import styles from './../../styles/Core.module.scss'
 
 const Header = () => {
 	return (
-		<header className='bg-greenligth hdr pt-6 pb-20 '>
+		<header className='bg-greenligth hdr pt-12 pb-20 '>
 			<div className={styles.container}>
 				<div className='header__wrapper '>
 					<div>

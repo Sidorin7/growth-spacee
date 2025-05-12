@@ -21,7 +21,9 @@ const EnglishWords = lazy(() => import('./pages/EnglishWords')) // без .tsx!
 const RootRoute = createRootRoute({
 	component: () => (
 		<div className='min-h-screen flex flex-col overflow-x-hidden'>
-			<Navbar />
+			<div className='mt-[64px]'>
+				<Navbar />
+			</div>
 			<main className='flex-grow'>
 				<Outlet />
 			</main>

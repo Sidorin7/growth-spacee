@@ -8,7 +8,7 @@ const Navbar = () => {
 	const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
 	return (
-		<nav className='bg-black-800 w-full relative z-50 overflow-x-hidden'>
+		<nav className='fixed top-0 left-0 w-full bg-black-800 z-50 shadow-md'>
 			<div className={`${styles.containerNav} max-w-[1400px] mx-auto px-4`}>
 				<div className='flex justify-between items-center py-4 flex-wrap gap-4'>
 					{/* Логотип */}
@@ -71,7 +71,7 @@ const Navbar = () => {
 
 			{/* Мобильное меню */}
 			<div
-				className={`fixed top-0 right-0 h-full w-64 bg-green text-white p-6 transition-transform duration-300 z-50 ${
+				className={`fixed top-0 right-0 h-full w-90 bg-green text-white p-6 transition-transform duration-300 z-50 ${
 					isMenuOpen ? 'translate-x-0' : 'translate-x-full'
 				}`}
 			>
